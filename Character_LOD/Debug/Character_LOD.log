@@ -1,0 +1,8 @@
+﻿  GLTools.cpp
+C:\Users\cjw1464\source\repos\Character_LOD\Character_LOD\GLTools.hpp(4,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'JGL/JGL.hpp': No such file or directory
+  main.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Users\cjw1464\source\repos\Character_LOD\Character_LOD\main.cpp(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'JGL/JGL_Window.hpp': No such file or directory
+  readBVH.cpp
+C:\Users\cjw1464\source\repos\Character_LOD\Character_LOD\readBVH.cpp(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'glm/gtx/quaternion.hpp': No such file or directory
+  코드를 생성하고 있습니다...
