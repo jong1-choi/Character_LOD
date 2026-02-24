@@ -1,0 +1,28 @@
+# Visual Studio build outputs
+x64/
+Debug/
+Release/
+*.exe
+*.ilk
+*.pdb
+*.iobj
+*.ipdb
+
+# Visual Studio IDE files
+.vs/
+*.suo
+# *.user is intentionally NOT ignored — vcxproj.user contains the working directory
+# setting required for shaders to load correctly ($(SolutionDir)Res)
+*.ncb
+*.sdf
+*.VC.db
+*.VC.opendb
+ipch/
+
+# Intermediate build files
+*.obj
+*.tlog/
+
+# OS
+Thumbs.db
+.DS_Store

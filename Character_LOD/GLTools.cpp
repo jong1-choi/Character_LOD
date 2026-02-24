@@ -1,4 +1,4 @@
-#include "GLTools.hpp"
+#include "GLTools.h"
 #include <vector>
 #include <tuple>
 
@@ -49,18 +49,17 @@ struct RenderableMesh {
 void drawQuad() {
 	static RenderableMesh mesh;
 	if( !mesh.va ) {
-		const std::vector<glm::vec3> v = { {-1,1,0}, {-1,-1,0}, {1,1,0}, {1,-1,0} };
-		const std::vector<glm::vec3> n = { {0,0,1}, {0,0,1}, {0,0,1}, {0,0,1} };
-		const std::vector<glm::vec2> t = { {0,0}, {0,1}, {1,0}, {1,1} };
+		const std::vector<glm::vec3>  v = { {-1,1,0}, {-1,-1,0}, {1,1,0}, {1,-1,0} };
+		const std::vector<glm::vec3>  n = { {0,0,1}, {0,0,1}, {0,0,1}, {0,0,1} };
 		const std::vector<glm::uvec3> e = { {0,1,2}, {2,1,3} };
 		mesh.create( v, n, e );
 	}
 	mesh.render();
 }
 
-const int N_STRIP = 15;
-const int N_SLICE = 30;
-const float PI = 3.1415926535;
+constexpr int   N_STRIP = 15;
+constexpr int   N_SLICE = 30;
+constexpr float PI      = 3.1415926535f;
 void drawSphere() {
 	static RenderableMesh mesh;
 	if( !mesh.va ) {
